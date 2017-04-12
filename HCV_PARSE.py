@@ -176,7 +176,7 @@ def go():
 
 
 Button(cwgt, text='Quit', command=quit_script).grid(row=20, column=0, sticky=W, pady=4)
-Button(cwgt, text='Parse', command=run).grid(row=20, column=1, sticky=W, pady=4)
+Button(cwgt, text='Parse', command=go).grid(row=20, column=1, sticky=W, pady=4)
 master.minsize(800,400)
 mainloop( )
 
