@@ -166,7 +166,13 @@ def run():
     datapout_NS5Bfinal.close()
     datapout_NS3final.close()
 
-
+def go():
+   try:
+      run()
+        tkMessageBox.showinfo("DONE!",  "Your XML has been created and sent to Server")
+   except:
+      tkMessageBox.showerror("There was an error",  "Please try again")
+      
 
 
 Button(cwgt, text='Quit', command=quit_script).grid(row=20, column=0, sticky=W, pady=4)
